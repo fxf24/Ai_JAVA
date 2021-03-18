@@ -48,5 +48,6 @@
 * [ArrayList](./day7/src/day7/SameSentenceTest.java) 활용
 * generic 타입 연습
   * [nongeneric](./day7/src/nongeneric/GenericTest.java)
-  * [generic1](./day7/src/generic1/GenericTset.java)
-  * [generic2](./day7/src/generic2/GenericTset.java)
+  * [generic1](./day7/src/generic1/GenericTest.java)
+  * [generic2](./day7/src/generic2/GenericTest.java)
+* 위에 것들 [총정리](./day7/src/day7/StudentMapTest.java)
