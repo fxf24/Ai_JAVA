@@ -44,3 +44,5 @@
 
 * [ArrayList](./day7/src/day7/ArrayListTest.java) 연습
 * [HashSet](./day7/src/day7/HashSetTest.java) 연습
+* [HashMap](./day7/src/day7/PhoneMapTest.java) 연습
+* [ArrayList](./day7/src/day7/SameSentenceTest.java) 활용
