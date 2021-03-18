@@ -27,3 +27,10 @@
 
 
 
+## day 5
+
+## day 6
+
+## day 7
+
+* [ArrayList](./day7/src/day7/ArrayListTest.java) 연습
