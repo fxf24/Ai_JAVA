@@ -30,10 +30,11 @@ public class ArrayListTest {
 		
 		//ArrayList = 여려 타입 데이터 저장 가능/ 동일타입 데이터만 저장하되 갯수 변경 의도
 		/* 1> 컴파일러 컴파일 시점 타입 체크
-		 * 2> 형변환 필요없다
-		 * 3> 타입 정적 유지
+		 * 2> 형변환 필요없다 = 단순 간결 = 실행오류가 줄어든다
+		 * 3> 타입 정적 = 유지 타입 동적 x
 		 * 4> 타입 지정 x ==> add(Object o) / Object <-- get(0)
 		 * 5> 타입 지정 o ==> add(? o) / ? <-- get(0)
+		 * 6> generic 타입 지정한 ArrayList
 		 * */
 //		ArrayList list = new ArrayList(5);
 		ArrayList<Employee> list = new ArrayList<Employee>(5);
