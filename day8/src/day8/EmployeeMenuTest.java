@@ -37,7 +37,6 @@ class Employee{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		
 		return id + " - " + name + " - " + salary;
 	}
 }
@@ -76,6 +75,9 @@ public class EmployeeMenuTest {
 					break;
 				case 3:
 					System.out.println("사원정보 수정을 선택하셨습니다.");
+					//수정 사번 입력 : 100
+					//수정항목 입력 : name 박수정 ->   이름   박수정으로 변경
+					//			   salary 300 -> 현재급여 + 3000 변경
 					break;
 				case 4:
 					System.out.println("사원정보 탈퇴를 선택하셨습니다.");
@@ -88,6 +90,8 @@ public class EmployeeMenuTest {
 					break;
 			}
 		}
+		
+		s.close();
 	}
 
 }
