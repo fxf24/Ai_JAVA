@@ -81,3 +81,5 @@
   * 파일 입출력 기능 없다.
 
 * [Scanner](./day8/src/io/ScannerTest.java) 이용 입력
+
+* [직원메뉴](./day8/src/day8/EmployeeMenuTest.java) 실습
