@@ -68,4 +68,16 @@
 * [InnerTest3](./day8/src/day8/InnerTest3.java) 
   * 지역클래스는 지역변수에 접근이 가능하다.
   * 무명의 객체를 이용하여 코딩을 할 수 있다.
+  * 람다식을 이용하여 식을 간결하게 표현할 수 있다.
+* [람다식](./day8/src/day8/FunctionalTest.java) 연습
+* [입출력](./day8/src/io/SystemInTest.java) 연습
 
+|      | 1바이트<br />이미지 동영상 음향                             | 2바이트<br />문자기반                           |
+| ---- | ----------------------------------------------------------- | ----------------------------------------------- |
+| 입력 | InputStream<br />xxxxInputStream<br />read()<br />close()   | Reader<br />xxxReader<br />read()<br />close()  |
+| 출력 | OutputStream<br />xxxOutputStream<br />write()<br />close() | Writer<br />xxxWriter<br />write()<br />close() |
+
+* File - 파일과 디렉토리 정보 제공 클래스
+  * 파일 입출력 기능 없다.
+
+* [Scanner](./day8/src/io/ScannerTest.java) 이용 입력
