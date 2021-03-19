@@ -51,3 +51,21 @@
   * [generic1](./day7/src/generic1/GenericTest.java)
   * [generic2](./day7/src/generic2/GenericTest.java)
 * 위에 것들 [총정리](./day7/src/day7/StudentMapTest.java)
+
+## day 8
+
+* 중첩클래스에 대해 공부를 해보자
+  * 클래스 내에서 클래스를 선언해 사용할 수 있다.
+* [InnerTest1](./day8/src/day8/InnerTest1.java) 중첩클래스의 기초
+  * Innerclass에는 static을 사용할 수 있다.
+  * Innerclass의 종류
+    * 멤버클래스로 사용되는 것
+      * 인스턴스 멤버 클래스
+      * 정적 멤버클래스
+    * 로컬클래스로 사용되는것
+* [InnerTest2](./day8/src/day8/InnerTest2.java) 
+  * static클래스는 static변수에만 접근이 가능하다.
+* [InnerTest3](./day8/src/day8/InnerTest3.java) 
+  * 지역클래스는 지역변수에 접근이 가능하다.
+  * 무명의 객체를 이용하여 코딩을 할 수 있다.
+
