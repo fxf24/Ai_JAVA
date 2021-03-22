@@ -25,11 +25,28 @@
 
 ## day 4
 
-
+* [생성자](./day4/src/day4/ConstructorTest.java) 오버로딩 연습
+* [메소드](./day4/src/day4/OverloadTest.java) 오버로딩 연습
+* [추상클래스](./day4/src/edu/AbstractTest.java) 연습
+* 클래스[상속](./day4/src/edu/InheritanceTest.java) 연습
+* [타입캐스팅](./day4/src/edu/TypeCastingTest.java) 연습
 
 ## day 5
 
+* [인터페이스](./day5/src/day5/InterfaceTest.java) 연습 [학생](./day5/src/day5/Student.java) [선생님](./day5/src/day5/Teacher.java)
+* [오브젝트](./day5/src/day5/ObjectClassTest.java) 클래스의 이해
+* [예외](./day5/src/day5/ExceptionTest.java) 연습, [throw](./day5/src/day5/ThrowsTest.java) 이용 예외
+* 상속을 이용한 [직원 클래스](./day5/src/day5/SalaryTest.java) 만들기 연습
+
 ## day 6
+
+* [멀티쓰레드](./day6/src/day6/MultiThreadTest.java) 연습
+* [정규식 패턴](./day6/src/day6/PatternTest.java) 연습
+* [문자열](./day6/src/day6/StringTest.java) 함수 연습
+* Calendar, SimpledateFormat 이용 [시간](./day6/src/day6/TimeTest.java) 나타내기
+* [Runnable](./day6/src/runna/MultiThreadTest.java) 이용 멀티쓰레드 연습
+* [Synchronized](./day6/src/day6/SynchronizedTest.java) 연습
+* [책방](./day6/src/day6/BookStrore.java) 목록 보여주기 실습
 
 ## day 7
 
