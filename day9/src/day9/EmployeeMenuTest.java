@@ -187,6 +187,43 @@ public class EmployeeMenuTest {
 					break;
 				case 4:
 					System.out.println("사원정보 탈퇴를 선택하셨습니다.");
+					System.out.print("탈퇴 사번 입력 : ");
+					int d_id = s.nextInt();
+					
+					try {
+						fi = new FileReader("employee.txt");
+						sc = new Scanner(fi);
+						
+						while(sc.hasNextLine()) {
+							String line = sc.nextLine();
+							String items[] = line.split("\\|");
+							int id2 = Integer.parseInt(items[0]);
+							String name2 = items[1];
+							double salary2 = Double.parseDouble(items[2]);
+							
+							System.out.println(id2 + "|" + name2 + "|" + salary2);
+							if(d_id == id2) {continue;}
+							eDB.add(new Employee(id2, name2, salary2));
+						}	
+						
+						fo = new FileWriter("employee.txt");
+						for(Employee e : eDB) {
+							fo.write(e.toString() + "\n");
+						}
+						
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} finally {
+						try {
+							fi.close();
+							fo.close();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						sc.close();
+					}
 					break;
 				case 5:
 					System.out.println("프로그램 종료합니다.");
