@@ -83,3 +83,9 @@
 * [Scanner](./day8/src/io/ScannerTest.java) 이용 입력
 
 * [직원메뉴](./day8/src/day8/EmployeeMenuTest.java) 실습
+
+## day 9
+
+* [FileClassTest](./day9/src/day9/FileClassTest.java) 파일 연습
+* [파일복사](./day9/src/day9/FileCopyTest.java) 연습
+* [파일](./day9/src/day9/EmployeeMenuTest.java) 이용하여 직원메뉴 저장하기
