@@ -89,3 +89,6 @@
 * [FileClassTest](./day9/src/day9/FileClassTest.java) 파일 연습
 * [파일복사](./day9/src/day9/FileCopyTest.java) 연습
 * [파일](./day9/src/day9/EmployeeMenuTest.java) 이용하여 직원메뉴 저장하기
+  * 파일을 이용 직원데이터를 저장
+  * 파일로 저장된 데이터를 불러와 출력
+  * 저장된 직원데이터를 불러와 정보를 수정 후 저장
