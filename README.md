@@ -116,3 +116,8 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | java.net.ServerSocket<br />java.net.Socket<br />1> 연결<br />2> 서버 출력 - 클라이언트 입력<br />3> 클라이언트 출력 - 서버입력<br />4> 연결해제<br /> | java.net.DatagramSocket<br />java.net.DatagramPacket<br />1> 보낸이메일 + 받는이메일 + 내용1<br />2> 보낸이메일 + 받는이메일 + 내용2<br />3> 연결x<br />4> 동시에 대량 내용 전송<br />5> 응답 필요 없는 메시지 |
 | http - 웹클라이언트/서버                                     |                                                              |
+
+## day 10
+
+* [서버](./day10/src/server/TCPServer.java) 와 [클라이언트](./day10/src/client/TCPClient.java) 연습
+
