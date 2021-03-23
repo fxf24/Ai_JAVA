@@ -1,6 +1,7 @@
 package server;
 
 import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -26,11 +27,9 @@ public class TCPServer_Data {
 				
 				//클라이언트로 hello client 문자열 전송 = 서버가 출력
 				OutputStream o = s.getOutputStream();
+				DataOutputStream dos = new DataOutputStream(o);
 				String data = "hello client";
-				
-				//String --> byte[] 변경
-				byte[] data_byte = data.getBytes();
-				o.write(data_byte);
+				dos.writeUTF(data);
 				
 				s.close();
 				System.out.println("클라이언트와 연결종료");

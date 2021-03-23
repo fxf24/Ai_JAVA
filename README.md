@@ -120,4 +120,15 @@
 ## day 10
 
 * [서버](./day10/src/server/TCPServer.java) 와 [클라이언트](./day10/src/client/TCPClient.java) 연습
+* DataStream을 이용한 [서버](./day10/src/server/TCPServer_Data.java) 와 [클라이언트](./day10/src/client/TCPClient_Data.java)
 
+| MemberServer서버                                             | MemberClient클라이언트                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1> 클라이언트로부터 아이디와 암호를 전송받음<br />2> 아이디는 String ids[] = {}"java", "jsp", "spring"}; 중복체크한다.<br />3> 클라이언트에게전송한다.<br />중복된 아이디라면 "다른 아이디를 사용하세요" 전송한다.<br />중복되지 않았다면 클라이언트 "xxxx는 가능합니다" 전송한다. | 1> 회원아이디입력: XXX(키보드)<br />2> 암호입력 : XXX(키보드)<br />3> 서버로 전송한다.<br />아이디 암호<br />4> 서버로부터 결과를 입력받는다. |
+
+* [MemberServer](./day10/src/server/MemberServer.java) 와 [MemberClient](./day10/src/client/MemberClient.java)
+
+* [비정형 매개변수](./day10/src/day10/VariableArgumentTest.java)
+  * [자료형... 변수명] 형식을 통해 여러개의 값을 매개변수로 넘겨줄 수 있다.
+
+* 싱글톤을 이용하여 EmployeeMenu 만들기
