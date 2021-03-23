@@ -12,26 +12,13 @@ public class InsertProcess {
 		String name = s.next();
 		System.out.print("급여 입력 : ");
 		double salary = s.nextDouble();
-
+		
 		//Controller 클래스 입력 내용 전달
 		//EmployeeVO e = new EmployeeVO(id, name, salary);
 		//EmployeeDAO ??? 메소드 호출
-//		String save = new EmployeeVO(id, name, salary).toString() + "\n";
-//		System.out.print(save);
-//		try {
-//			fo = new FileWriter("employee.txt", true);
-//			fo.write(save);
-//		}
-//		catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//		finally {
-//			try {
-//				fo.close();
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//		}
+		Controller c = Controller.getInstance();
+		c.insert(id, name, salary);
+		
+		s.close();
 	}
 }

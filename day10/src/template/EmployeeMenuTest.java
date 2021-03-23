@@ -1,6 +1,5 @@
 package template;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -71,47 +70,11 @@ public class EmployeeMenuTest {
 					break;
 				case 2:
 					System.out.println("사원정보 조회를 선택하셨습니다.");
-//						for(Employee e: eDB) {
-//							System.out.println(e);
-//						}
-					/* day9/employee.txt 파일 저장 employee 객체만큼 입력
-						 * id + "|" + name + "|" + salary의 1.5배 형식으로 콘솔출력
-						 * */
-					try {
-						fi = new FileReader("employee.txt");
-						sc = new Scanner(fi);
-						while(sc.hasNextLine()) {
-							String line = sc.nextLine();
-							String items[] = line.split("\\|");
-							String id2 = items[0];
-							String name2 = items[1];
-							double salary2 = Double.parseDouble(items[2]);
-							System.out.println(id2 + "|" + name2 + "|" + salary2*1.5);
-						}
-					} catch (FileNotFoundException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					finally {
-						try {
-							fi.close();
-						} catch (IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-						sc.close();
-					}
-					
-					
+					ViewProcess vp = new ViewProcess();
+					vp.process();
 					break;
 				case 3:
 					System.out.println("사원정보 수정을 선택하셨습니다.");
-					//수정 사번 입력 : 100
-					//수정항목 입력 : name 박수정 ->   이름   박수정으로 변경
-					/* '|' 분리 첫번째 요소(=사번)이 100 인 라인을 찾아서
-					 * '|' 분리 두번째 요소(=이름을) 박수정으로 변경
-					 * 모든 라인을 다시 employee.txt로 다시 저장
-					 * */
 					System.out.print("수정 사번 입력 : ");
 					int m_id = s.nextInt();
 					s.nextLine();
@@ -146,21 +109,13 @@ public class EmployeeMenuTest {
 						for(EmployeeVO e : eDB) {
 							fo.write(e.toString() + "\n");
 						}
-						
+						fi.close();
+						fo.close();
+						sc.close();
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-					} finally {
-						try {
-							fi.close();
-							fo.close();
-						} catch (IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-						sc.close();
-					}
-					
+					} 
 					break;
 				case 4:
 					System.out.println("사원정보 탈퇴를 선택하셨습니다.");
@@ -188,19 +143,13 @@ public class EmployeeMenuTest {
 							fo.write(e.toString() + "\n");
 						}
 						
+						fi.close();
+						fo.close();
+						sc.close();
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-					} finally {
-						try {
-							fi.close();
-							fo.close();
-						} catch (IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-						sc.close();
-					}
+					} 
 					break;
 				case 5:
 					System.out.println("프로그램 종료합니다.");

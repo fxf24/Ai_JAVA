@@ -131,4 +131,13 @@
 * [비정형 매개변수](./day10/src/day10/VariableArgumentTest.java)
   * [자료형... 변수명] 형식을 통해 여러개의 값을 매개변수로 넘겨줄 수 있다.
 
-* 싱글톤을 이용하여 EmployeeMenu 만들기
+| DAO(Data Acess Object)                                       | VO(Value Object)                                             | DTO(Data Transfer Object)                                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1> 데이터에 직접 접근하는 객체<br />2> 데이터를 조회, 조작하는 기능을 전담하는 객체 | 1> 데이터 교환을 위한 객체<br /><br />2> 속성과 그 속성에 접근하기위한 getter setter만 가지고 있는 객체<br />3> read only | 1> 데이터 교환을 위한 객체<br />2> 속성과 그 속성에 접근하기위한 getter setter만 가지고 있는 객체 |
+
+
+
+* DAO/ VO/ DTO를 이용하여 [EmployeeMenu](./day10/src/template/EmployeeMenuTest.java) 만들기
+  * [Controller](./day10/src/template/Controller.java)는 싱글톤 패턴을 이용하여 생성
+  * [EmplyeeVO](./day10/src/template/EmplyeeVO.java) 와 [EmployeeDAO](./day10/src/template/EmployeeDAO.java) 생성
+  * [InsertProcess](./day10/src/template/InserProcess.java) 와 [ViewProcess](./day10/src/template/ViewProcess.java) 생성
