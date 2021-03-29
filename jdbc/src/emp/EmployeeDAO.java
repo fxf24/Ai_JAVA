@@ -1,18 +1,20 @@
-package jdbc;
+package emp;
+//DATA ACCESS OBJECT = 데이터 직접 접근
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
-public class PreparedSelectTest {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class EmployeeDAO {
+	public ArrayList<EmployeeDTO> getEmployees(String currentPage, String cntPerPage){
 		Connection conn = null;
 		PreparedStatement pt = null;
 		ResultSet rs = null;
+		ArrayList<EmployeeDTO> list = new ArrayList<>();
+		
 		try {
 			//jdbc driver 메모리 로드
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -33,17 +35,22 @@ public class PreparedSelectTest {
 			pt = conn.prepareStatement(sql);
 			
 			//sql 입력파라미터값 세팅
-			pt.setInt(1, 11);
-			pt.setInt(2, 20);
+			pt.setInt(1, Integer.parseInt(currentPage));
+			pt.setInt(2, Integer.parseInt(cntPerPage));
 			
 			//sql 실행
 			rs = pt.executeQuery();
-			
 			while(rs.next()) {
 				int rownum = rs.getInt("rownum");
-				String name = rs.getString("first_name");
+				String emp_name = rs.getString("first_name");
 				double salary = rs.getDouble("salary");
-				System.out.println(rownum + "|" + name + "|" + salary);
+				
+				EmployeeDTO dto = new EmployeeDTO();
+				dto.setEmployee_id(rownum);
+				dto.setFirst_name(emp_name);
+				dto.setSalary(salary);
+				
+				list.add(dto);
 			}
 			
 			//실행결과 출력
@@ -59,6 +66,7 @@ public class PreparedSelectTest {
 		finally {
 			try {
 				rs.close();
+				rs.next();
 				pt.close();
 				conn.close();
 			}
@@ -66,6 +74,6 @@ public class PreparedSelectTest {
 				
 			}
 		}
+		return list;
 	}
-
 }
