@@ -148,3 +148,7 @@
 
 * java에 oracle db를 [연결](./jdbc/src/jdbc/ConnectionTest.java)하여 사용해본다.
 * java로 oracle db에 [insert](./jdbc/src/jdbc/InsertTest.java) 연습
+* java로 oracle db에 [update](./jdbc/src/jdbc/UpdateTest.java) 연습
+* java로 oracle db에 [select](./jdbc/src/jdbc/SelectTest.java) 연습
+* [PreparedStatement](./jdbc/src/jdbc/PreparedInsertTest.java) 연습
+  * [PreparedStatement](./jdbc/src/jdbc/PreparedSelectTest.java) 연습
