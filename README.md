@@ -141,3 +141,10 @@
   * [Controller](./day10/src/template/Controller.java)는 싱글톤 패턴을 이용하여 생성
   * [EmplyeeVO](./day10/src/template/EmplyeeVO.java) 와 [EmployeeDAO](./day10/src/template/EmployeeDAO.java) 생성
   * [InsertProcess](./day10/src/template/InserProcess.java) 와 [ViewProcess](./day10/src/template/ViewProcess.java) 생성
+
+# DB
+
+## jdbc
+
+* java에 oracle db를 [연결](./jdbc/src/jdbc/ConnectionTest.java)하여 사용해본다.
+* java로 oracle db에 [insert](./jdbc/src/jdbc/InsertTest.java) 연습
