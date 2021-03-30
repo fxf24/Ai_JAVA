@@ -12,7 +12,15 @@ public class BoardListView {
 		int cntperpage = sc.nextInt();
 		
 		BoardDAO dao = new BoardDAO();
-		ArrayList<BoardDTO> dto = dao.getBoardList(pagenum, cntperpage);
+		ArrayList<BoardDTO> dto = null;
+		if(pagenum > 0) {
+			dto = dao.getBoardList(pagenum, cntperpage);
+		}
+		else {
+			dto = dao.getBoardList();
+		}
+		
+		
 		for(BoardDTO d : dto) {
 			System.out.println(d);
 		}
