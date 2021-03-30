@@ -157,6 +157,6 @@
 
 * DB를 이용하여 게시판을 만들어보자
 * 게시판 [DTO](./board/src/board/BoardDTO.java)
-* 게시판 [DAO]([DTO](./board/src/board/BoardDAO.java))
+* 게시판 [DAO](./board/src/board/BoardDAO.java)
 * 게시판 [Insert](./board/src/board/BoardInsertView.java), [List](./board/src/board/BoardListView.java) view
 * 게시판 [Main](./board/src/board/BoardMain.java)
